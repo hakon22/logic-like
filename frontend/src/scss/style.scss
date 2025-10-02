@@ -1,0 +1,36 @@
+body {
+  background-color: #fffbf6;
+}
+
+.anim-show {
+	opacity: 0;
+	transition: 1s;
+	animation: show 1s 1;
+  animation-fill-mode: forwards;
+}
+
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.idea {
+  &-card {
+    opacity: 0.8 !important;
+
+    &:hover {
+      opacity: 1 !important;
+    }
+  }
+}
+
+@keyframes show {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media (max-width: 767px) {}
