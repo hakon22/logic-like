@@ -33,7 +33,7 @@ sudo apt install make
 CREATE SCHEMA idea
 ```
 
-В корне проекта создайте файл .env с настройками:
+В корне папки с сервером (backend) создайте файл .env с настройками:
 ```bash
 PORT=3011 (если меняете, обновите также поле proxy в frontend/package.json)
 DB_LOCAL="test" <--- вставьте сюда вашу тестовую базу данных от PostgreSQL
